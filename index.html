@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Basics</title>
+
+    <style>
+        /* CSS styling */
+        body {
+            background-color: #f0f0f0; /* Initial background color */
+            font-family: Arial, sans-serif; /* Font face */
+            color: #333; /* Text color */
+            font-size: 16px; /* Font size */
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50; /* Header background color */
+            color: #fff; /* Header text color */
+            padding: 10px;
+        }
+
+        #main-content {
+            margin: 20px;
+        }
+
+        .code {
+            font-family: 'Courier New', monospace; /* Font face for code */
+            font-size: 14px; /* Font size for code */
+            color: #007bff; /* Code text color */
+        }
+
+        /* Added style for the button */
+        #changeColorBtn {
+            padding: 8px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Added style for the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Development Basics</h1>
+    </header>
+
+    <div id="main-content">
+
+        <!-- JavaScript Data Types -->
+        <p>
+            JavaScript is a dynamic language that supports various data types such as:
+            <ul>
+                <li><span class="code">number</span></li>
+                <li><span class="code">string</span></li>
+                <li><span class="code">boolean</span></li>
+                <!-- Add more data types as needed -->
+            </ul>
+        </p>
+
+        <!-- JavaScript Operators -->
+        <p>
+            Operators in JavaScript include arithmetic operators (+, -, *, /), comparison operators (==, ===, !=, !==), and logical operators (&&, ||).
+        </p>
+
+        <!-- JavaScript Variables -->
+        <p>
+            Variables can be declared using
+            <span class="code">var</span>,
+            <span class="code">let</span>, or
+            <span class="code">const</span>.
+        </p>
+
+        <!-- HTML Structure Tags -->
+        <p>
+            In HTML, you can use tags like
+            <span class="code">&lt;p&gt;</span>,
+            <span class="code">&lt;header&gt;</span>, and
+            <span class="code">&lt;center&gt;</span> for structure.
+        </p>
+
+        <!-- CSS Selectors and Styling -->
+        <p>
+            CSS allows you to style your HTML elements. You can use selectors like
+            <span class="code">#id</span> and
+            <span class="code">.class</span> to apply styles.
+        </p>
+
+        <!-- CSS Font and Color Styling -->
+        <p>
+            Font color, size, and face can be set using CSS properties. Absolute units like pixels (px) can be used for precise measurements.
+        </p>
+
+        <!-- Button to Change Background Color -->
+        <button id="changeColorBtn" onclick="startColorChange()">Change Background Color</button>
+
+        <!-- HTML Elements: Anchor, Image, List, Div, Phrase, Blockquote -->
+        <a href="https://www.example.com">Visit Example.com</a>
+        <img src="image.jpg" alt="An Example Image">
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+        </ul>
+        <div>This is a div element.</div>
+        <p><em>This is an emphasized phrase.</em></p>
+        <blockquote>This is a blockquote.</blockquote>
+
+        <!-- Button to Trigger an Alert -->
+        <button onclick="showAlert()">Click Me</button>
+
+        <!-- HTML Table -->
+        <table>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script>
+        // JavaScript function to change background color to rainbow colors
+        function startColorChange() {
+            var body = document.body;
+            var colors = ['#ff0000', '#ff7f00', '#ffff00', '#00ff00', '#0000ff', '#4b0082', '#8b00ff']; // Rainbow colors
+            var currentIndex = 0;
+
+            // Change color every second
+            var colorChangeInterval = setInterval(function () {
+                body.style.backgroundColor = colors[currentIndex];
+                currentIndex = (currentIndex + 1) % colors.length;
+            }, 1000);
+        }
+
+        // JavaScript function to show an alert
+        function showAlert() {
+            alert('Hello, this is an alert!');
+        }
+    </script>
+
+</body>
+</html>
+
+
+
