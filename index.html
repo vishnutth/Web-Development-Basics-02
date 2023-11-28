@@ -1,61 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development Basics</title>
+ 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Web Development Basics</title>
 
-    <style>
-        /* CSS styling */
-        body {
-            background-color: #f0f0f0; /* Initial background color */
-            font-family: Arial, sans-serif; /* Font face */
-            color: #333; /* Text color */
-            font-size: 16px; /* Font size */
-            text-align: center;
-        }
+      <!-- Link to External CSS File -->
+      <link rel="stylesheet" type="text/css" href="style.css">
 
-        header {
-            background-color: #4CAF50; /* Header background color */
-            color: #fff; /* Header text color */
-            padding: 10px;
-        }
-
-        #main-content {
-            margin: 20px;
-        }
-
-        .code {
-            font-family: 'Courier New', monospace; /* Font face for code */
-            font-size: 14px; /* Font size for code */
-            color: #007bff; /* Code text color */
-        }
-
-        /* Added style for the button */
-        #changeColorBtn {
-            padding: 8px;
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        /* Added style for the table */
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        table, th, td {
-            border: 1px solid #333;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-
-    </style>
+  
 </head>
 <body>
 
@@ -140,25 +94,7 @@
 
     </div>
 
-    <script>
-        // JavaScript function to change background color to rainbow colors
-        function startColorChange() {
-            var body = document.body;
-            var colors = ['#ff0000', '#ff7f00', '#ffff00', '#00ff00', '#0000ff', '#4b0082', '#8b00ff']; // Rainbow colors
-            var currentIndex = 0;
-
-            // Change color every second
-            var colorChangeInterval = setInterval(function () {
-                body.style.backgroundColor = colors[currentIndex];
-                currentIndex = (currentIndex + 1) % colors.length;
-            }, 1000);
-        }
-
-        // JavaScript function to show an alert
-        function showAlert() {
-            alert('Hello, this is an alert!');
-        }
-    </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
